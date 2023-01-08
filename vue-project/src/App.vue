@@ -1,24 +1,22 @@
-<template>
-  <div class="fondo">
-    <Navbar />
-    <Convertidor />
-  </div>
-</template>
-
 <script>
-import Convertidor from "./components/Convertidor";
-import Navbar from "./components/Navbar";
+import Converter from "./components/Converter.vue";
+import Navbar from "./components/Navbar.vue";
 
 export default {
-  name: "App",
+  name: "app",
   components: {
-    Convertidor,
+    Converter,
     Navbar,
   },
 };
 </script>
 
-<style>
+<template>
+    <Navbar />
+    <Converter />
+    
+</template>
+<style scoped>
 .fondo {
   background-image: url("./assets/euro-g6e55d6828_640.jpg");
   height: 100vh;
